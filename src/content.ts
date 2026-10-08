@@ -1,0 +1,116 @@
+import "@fontsource/teko/500.css";
+import "@fontsource/teko/600.css";
+import type { Site } from "./lib";
+
+export const SITE: Site = {
+  name: "The Raffles Restaurant",
+  sub: { en: "Momos, tikka & North Indian · Maruti Kunj, Gurugram", hi: "मोमोज़, टिक्का और नॉर्थ इंडियन · मारुति कुंज, गुरुग्राम" },
+  banner: { en: "Birthday coming up? There's a private party hall", hi: "बर्थडे आने वाला है? प्राइवेट पार्टी हॉल है" },
+  phone: "919991421781",
+  phoneDisplay: "+91 99914 21781",
+  lat: 28.3610119,
+  lon: 77.0757222,
+  hours: [[11, 23], [11, 23], [11, 23], [11, 23], [11, 23], [11, 23], [11, 23]],
+  theme: {
+    dark: true,
+    bg: "#0a1015",
+    bg2: "#0f171e",
+    panel: "#141e27",
+    ink: "#eef3f6",
+    ink2: "#bccad3",
+    ink3: "#7d8d98",
+    line: "#223241",
+    accent: "#ffb547",
+    onAccent: "#2a1600",
+    display: "Teko",
+    weight: 600,
+    upper: false,
+  },
+  scene: "pour",
+  align: "right",
+  hero: {
+    title: [
+      { en: "Tandoori momos,", hi: "तंदूरी मोमोज़," },
+      { en: "and a hall for your party.", hi: "और पार्टी के लिए हॉल।" },
+    ],
+    proof: {
+      en: "4.5 on Google from 148 reviews. Tandoori momos, malai chicken tikka and a special thali, with a private party hall in Maruti Kunj.",
+      hi: "गूगल पर 148 रिव्यू से 4.5। तंदूरी मोमोज़, मलाई चिकन टिक्का और स्पेशल थाली, मारुति कुंज में प्राइवेट पार्टी हॉल के साथ।",
+    },
+    fallback: "/img/p3.jpg",
+  },
+  marquee: ["Tandoori Momos", "Chicken Momos", "Malai Chicken Tikka", "Aloo Pyaaz Paratha", "Special Thali", "Dal Makhni", "Party Hall"],
+  dishes: {
+    title: { en: "What the regulars order", hi: "पुराने ग्राहक क्या मंगाते हैं" },
+    body: { en: "Every line is a real Google review.", hi: "हर लाइन असली गूगल रिव्यू है।" },
+    layout: "list",
+    items: [
+      { name: { en: "Tandoori Momos", hi: "तंदूरी मोमोज़" }, quote: "Tandoori momos and chicken momos are very delicious 🤤 you must try", img: "/img/p4.jpg" },
+      { name: { en: "Paneer Momos & Malai Tikka", hi: "पनीर मोमोज़ और मलाई टिक्का" }, quote: "One must try Tandori Paneer Momos and Malai Chicken Tikka", img: "/img/p5.jpg" },
+      { name: { en: "Aloo Pyaaz Paratha", hi: "आलू प्याज़ पराठा" }, quote: "it was a game-changer! The taste was simply divine—crispy on the outside, perfectly spiced on the inside." },
+      { name: { en: "Special Thali", hi: "स्पेशल थाली" }, quote: "Special thali is awesome" },
+      { name: { en: "Dal Makhni", hi: "दाल मखनी" }, quote: "Everything good dal makhni was verygood" },
+    ],
+  },
+  gallery: { title: { en: "", hi: "" }, layout: "strip", photos: [] },
+  feature: {
+    kind: "occasions",
+    title: { en: "Birthdays and family events", hi: "बर्थडे और पारिवारिक कार्यक्रम" },
+    body: { en: "What guests celebrate here.", hi: "मेहमान यहां क्या-क्या मनाते हैं।" },
+    img: "/img/p10.jpg",
+    items: [
+      { label: { en: "Birthdays", hi: "बर्थडे" }, quote: "You can celebrate your birthday there is also a private party hall" },
+      { label: { en: "Family events", hi: "पारिवारिक कार्यक्रम" }, quote: "Best food in this area..perfect place to celebrate family events..Great experience. Must try ❤️" },
+      { label: { en: "Delivery", hi: "डिलीवरी" }, quote: "Best Food Delivery Service in RTC Bhondsi." },
+      { label: { en: "The owner", hi: "मालिक" }, quote: "the owner is a really nice person very humble and kind" },
+    ],
+  },
+  reviews: {
+    title: { en: "117 of 148 reviews are five stars", hi: "148 में से 117 रिव्यू पांच स्टार" },
+    rating: 4.5,
+    dist: [117, 13, 7, 4, 7],
+    quotes: [
+      { quote: "The momos is top notch.", stars: 5 },
+      { quote: "Taste and hygiene too good", stars: 5 },
+      { quote: "Such a nice place to dine... awesome food great ambiance good staff. Must visit😊😊", stars: 5 },
+    ],
+  },
+  visit: {
+    title: { en: "In Shyam Kunj, Maruti Kunj", hi: "श्याम कुंज, मारुति कुंज में" },
+    img: "/img/p9.jpg",
+    alt: "The Raffles Restaurant",
+    address: { en: "Shyam Kunj, Maruti Kunj, Gurugram", hi: "श्याम कुंज, मारुति कुंज, गुरुग्राम" },
+    note: { en: "Open 11am to 11pm, every day.", hi: "हर दिन सुबह 11 से रात 11 बजे तक।" },
+  },
+  pour: { from: "pan", into: "kadhai", liquid: "#c4471e", foam: "#e2723c", thick: 1.8, hot: true },
+  story: [
+    { kicker: { en: "The momos", hi: "मोमोज़" }, title: { en: "Tandoori momos first.", hi: "पहले तंदूरी मोमोज़।" }, quote: "Tandoori momos and chicken momos are very delicious 🤤 you must try" },
+    { kicker: { en: "The paratha", hi: "पराठा" }, title: { en: "A game-changer.", hi: "गेम-चेंजर।" }, quote: "it was a game-changer! The taste was simply divine—crispy on the outside, perfectly spiced on the inside." },
+    { kicker: { en: "The hall", hi: "हॉल" }, title: { en: "Bring the birthday here.", hi: "बर्थडे यहीं मनाइए।" }, quote: "You can celebrate your birthday there is also a private party hall" },
+  ],
+  build: {
+    title: { en: "Build your order in a few taps", hi: "कुछ टैप में अपना ऑर्डर बनाइए" },
+    body: { en: "Tap the dishes regulars rave about, set how many and when. It goes to WhatsApp exactly as you see it.", hi: "पसंदीदा डिश टैप करें, कितने लोग और कब, चुनें। मैसेज व्हाट्सऐप पर ठीक ऐसे ही जाएगा।" },
+    pick: { label: { en: "Order", hi: "ऑर्डर" }, options: [
+      { name: { en: "Dine-in", hi: "बैठकर खाना" } },
+      { name: { en: "Delivery", hi: "डिलीवरी" } },
+      { name: { en: "Party hall", hi: "पार्टी हॉल" }, note: { en: "Birthdays, family events", hi: "बर्थडे, पारिवारिक कार्यक्रम" } },
+    ] },
+    items: [
+      { en: "Tandoori Momos", hi: "तंदूरी मोमोज़" },
+      { en: "Chicken Momos", hi: "चिकन मोमोज़" },
+      { en: "Malai Chicken Tikka", hi: "मलाई चिकन टिक्का" },
+      { en: "Aloo Pyaaz Paratha", hi: "आलू प्याज़ पराठा" },
+      { en: "Special Thali", hi: "स्पेशल थाली" },
+      { en: "Dal Makhni", hi: "दाल मखनी" },
+    ],
+    people: true,
+    when: true,
+    hello: { en: "Hi Raffles, I'd like:", hi: "नमस्ते रैफ़ल्स, मुझे चाहिए:" },
+  },
+  waHello: {
+    en: "Hi The Raffles Restaurant, I'd like to order. Items: , dine-in / delivery / party: , time: ",
+    hi: "नमस्ते द रैफ़ल्स रेस्टोरेंट, मुझे ऑर्डर देना है। आइटम: , बैठकर / डिलीवरी / पार्टी: , समय: ",
+  },
+  order: ["build", "dishes", "feature", "reviews", "visit"],
+};
