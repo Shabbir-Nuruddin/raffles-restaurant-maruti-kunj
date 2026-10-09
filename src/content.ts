@@ -38,6 +38,7 @@ export const SITE: Site = {
       hi: "गूगल पर 148 रिव्यू से 4.5। तंदूरी मोमोज़, मलाई चिकन टिक्का और स्पेशल थाली, मारुति कुंज में प्राइवेट पार्टी हॉल के साथ।",
     },
     fallback: "/img/p3.jpg",
+    slides: ["/img/p3.jpg", "/img/p10.jpg", "/img/p4.jpg", "/img/p5.jpg"],
   },
   marquee: ["Tandoori Momos", "Chicken Momos", "Malai Chicken Tikka", "Aloo Pyaaz Paratha", "Special Thali", "Dal Makhni", "Party Hall"],
   dishes: {
